@@ -1,0 +1,356 @@
+
+<html>
+<title>LARVI Restaurant</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" type="image/x-icon" href="https://breakbreadatrestauranthigh.com/wp-content/uploads/2017/07/cropped-favicon.png">
+<body>
+  
+  
+
+<div class="w3-container w3-cursive">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family:"w3-container w3-cursive", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.lifestyleasia.com/wp-content/uploads/sites/7/2020/10/23162744/1-806x538.jpeg");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-button w3-xxlarge w3-black" style="font-size:100px">Welcome<br>Our LARVI</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Northstyle');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Northstyle</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Southstyle');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Southstyle</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'iCE-CREAMS');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">iCE-CREAMS</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Beverages');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Beverages</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><img class="w3-image" src="https://static.toiimg.com/thumb/56868564.cms?imgsize=1948751&width=800&height=800"  width="200" height="100">
+        <b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><img class="w3-image" src="https://www.rusticcrust.com/wp-content/uploads/2015/08/formaggio-large.jpg"  width="200" height="100">
+        <b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><img class="w3-image" src="https://carameltintedlife.com/wp-content/uploads/2021/09/paneer-pizza-recipe-1-2.jpg"  width="200" height="100">
+        <b>Paneer</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella,Paneer, onions</p>
+      <hr>
+
+      <h1><img class="w3-image" src="https://i.pinimg.com/originals/0e/96/c1/0e96c1abff68d199d53306034b10582a.jpg"  width="200" height="100">
+        <b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+
+      <h1><img class="w3-image" src="https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900"  width="200" height="100">
+        <b>cheese Pizza</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni,cheese </p>
+      <hr>
+
+      <h1><img class="w3-image" src="https://satyamskitchen.com/wp-content/uploads/2021/01/20191231_220705_1_40-e1611225297521.jpg"  width="200" height="100">
+        <b>peri peri pizza</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, peri peri </p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><img class="w3-image" src="https://www.thewholesomedish.com/wp-content/uploads/2018/07/Best-Lasagna-550-500x375.jpg"  width="200" height="100">
+        <b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><img class="w3-image" src="https://img-global.cpcdn.com/recipes/361c3fe18b063442/1200x630cq70/photo.jpg"  width="200" height="100">
+        <b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><img class="w3-image" src="https://www.abeautifulplate.com/wp-content/uploads/2015/04/spaghetti-all-amatriciana-1-9-600x880.jpg"  width="200" height="100">
+        <b>Spaghetti Classical</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><img class="w3-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCAU9e7JQR47tfdza6AK10aZ2Vica3dVRMCw&usqp=CAU.jpg"  width="200" height="100">
+        <b>White-sauce pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+    <div id="Northstyle" class="w3-container menu w3-padding-32 w3-white">
+      <h1><img class="w3-image" src="https://spoonsofflavor.com/wp-content/uploads/2019/11/Dhaba-Style-Aloo-Phool-Gobi-Msala.jpg"  width="200" height="100">
+        <b>Aloo Gobi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$20.50</span></h1>
+      <p class="w3-text-grey">Fresh cauliflower, potatoes</p>
+      <hr>
+    
+      <h1><img class="w3-image" src="https://cookingfromheart.com/wp-content/uploads/2020/09/Aloo-Paratha-4.jpg"  width="200" height="100">
+        <b>Aalo Paratha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Fresh paratha , any kind of pickle, chutney or yoghurt </p>
+      <hr>
+      
+      <h1><img class="w3-image" src="https://www.smithakalluraya.com/wp-content/uploads/2016/06/rajma-chawal.jpg"  width="200" height="100">
+        <b>Rajma Masala Curry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <p class="w3-text-grey">Fresh Red kidney beans</p>
+      <hr>
+    
+      <h1><img class="w3-image" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/07/malai-kofta-recipe.jpg"  width="200" height="100">
+        <b>Malai Kofta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+      <p class="w3-text-grey">Fresh Mughlai cuisine, Malai </p>
+      <hr>
+    
+      <h1><img class="w3-image" src="https://i.ytimg.com/vi/M7nvJN0vQ3g/maxresdefault.jpg"  width="200" height="100">
+        <b>Dal Makhani</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Fresh fried rice, jeera rice, etc</p>
+      <hr>
+    
+      <h1><img class="w3-image" src="https://www.whiskaffair.com/wp-content/uploads/2020/08/Kadai-Paneer-2-3.jpg"  width="200" height="100">
+        <b>Kadai Paneer</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Fresh naan and rice.</p>
+    </div>
+    <div id="Southstyle" class="w3-container menu w3-padding-32 w3-white">
+      <h1><img class="w3-image" src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/idli-recipe-1-280x280.jpg"  width="200" height="100">
+        <b> Idli </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$20.50</span></h1>
+      <p class="w3-text-grey">Fresh  Idli Batter For Soft Idli</p>
+      <hr>
+    
+      <h1>
+        <img class="w3-image" src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/masala-dosa-recipe-1-280x280.jpg"  width="200" height="100">
+        <b> Masala Dosa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Fresh paratha , any kind of pickle, chutney or yoghurt </p>
+      <hr>
+      
+      <h1><img class="w3-image" src="https://www.vegrecipesofindia.com/wp-content/uploads/2009/08/upma-recipe-1-280x280.jpg"  width="200" height="100">
+        <b>  Suji Ka Upma</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <p class="w3-text-grey">Upma Recipe | Rava Upma |</p>
+      <hr>
+    
+      <h1><img class="w3-image" src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/oats-dosa-1-280x280.jpg"  width="200" height="100">
+        <b> Oats Dosa </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+      <p class="w3-text-grey">Fresh Crispy Oats Crepes </p>
+      <hr>
+    
+      <h1><img class="w3-image" src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/01/rava-uttapam-recipe-280x280.jpg"  width="200" height="100">
+        <b>Rava-uttapam</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Fresh  Instant Mix Vegetable Rava Uttapam </p>
+      <hr>
+    
+      <h1><img class="w3-image" src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/coconut-chutney-1-280x280.jpg"  width="200" height="100">
+        <b>Mushroom Biryani</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Fresh Mushroom  and rice.</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><img class="w3-image" src="https://www.inspiredtaste.net/wp-content/uploads/2018/10/Homemade-Vegetable-Soup-Recipe-2-1200.jpg"  width="200" height="100">
+        <b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><img class="w3-image" src="https://hips.hearstapps.com/hmg-prod/images/190508-bruschetta-horizontal-2-1558014808.png"  width="200" height="100">
+        <b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><img class="w3-image" src="https://img-global.cpcdn.com/recipes/7cae70041f542cae/1200x630cq70/photo.jpg"  width="200" height="100">
+        <b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><img class="w3-image" src="http://blog.tefal.co.uk/wp-content/uploads/2020/02/AdobeStock_288489370.jpeg"  width="200" height="100">
+        <b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tomatoes and mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+<div id="iCE-CREAMS" class="w3-container menu w3-padding-32 w3-white">
+  <h1><img class="w3-image" src="data:image/jpeg;base64,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"  width="200" height="100">
+    <b> Vanilla </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$20.50</span></h1>
+  
+  <hr>
+
+  <h1>
+    <img class="w3-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xoH478jg_GT1XeOqtr0CrrfQWNIDeqhAXX5cv47LBF3f9uE_IOSl74mp3Xh7CzcYk-I&usqp=CAU"  width="200" height="100">
+    <b>Chocolate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+  
+  <hr>
+  
+  <h1><img class="w3-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCeregrovPNH00_9kbsYU0K77mEizvVbL-NLm2aC_LqXMY0qsqIsGYv6QhxnBzAzpeUv8&usqp=CAU"  width="200" height="100">
+    <b>  Butter pecan</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+  
+  <hr>
+
+  <h1><img class="w3-image" src="https://www.biggerbolderbaking.com/wp-content/uploads/2018/05/1C5A7434.jpg"  width="200" height="100">
+    <b> Strawberry </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+  
+  <hr>
+
+  <h1><img class="w3-image" src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Cinnamon-Chocolate-Chip-Ice-Cream_exps29313_CM2043886D08_11_1bC_RMS.jpg"  width="200" height="100">
+    <b>Chocolate chip</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+  
+  <hr>
+</div>
+
+<div id="Beverages" class="w3-container menu w3-padding-32 w3-white">
+  <h1><img class="w3-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOh68trvQoGjXJ12otjnmK2YQ6YtghDqsFkpe6iOXDTbfueVXT3O8-XDXTzOINZ2w4gYM&usqp=CAU"  width="200" height="100">
+    <b> Badam milk </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$20.50</span></h1>
+  
+  <hr>
+
+  <h1>
+    <img class="w3-image" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/22/tea.jpg"  width="200" height="100">
+    <b> Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+  
+  <hr>
+  
+  <h1><img class="w3-image" src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/mad-monks-coffee-shop-cappuccino.jpg"  width="200" height="100">
+    <b> Coffee</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+  
+  <hr>
+
+  <h1><img class="w3-image" src="https://www.adweek.com/wp-content/uploads/files/blogs/coke-riedel-hed-2014.jpg"  width="200" height="100">
+    <b> Coca-Cola </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+  
+  <hr>
+
+  <h1><img class="w3-image" src="https://static.turbosquid.com/Preview/2016/12/13__13_51_06/001.pngED1873F6-009A-4DB9-BD5A-618B850C2E1DOriginal.jpg"  width="200" height="100">
+    <b>Fanta</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+  <hr>
+
+  <h1><img class="w3-image" src="https://st2.depositphotos.com/7597710/10594/i/950/depositphotos_105947316-stock-photo-can-and-glass-of-pepsi.jpg"  width="200" height="100">
+    <b>Pepsi</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+  <hr>
+
+<h1><img class="w3-image" src="https://i.ytimg.com/vi/x10AvQxsSUU/maxresdefault.jpg"  width="200" height="100">
+    <b>mango juice</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+  <hr>
+
+  <h1><img class="w3-image" src="https://i.ytimg.com/vi/bGfJILzw6Mc/maxresdefault.jpg"  width="200" height="100">
+    <b>Apple juice </b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+  <hr>
+
+  <h1><img class="w3-image" src="https://www.thespruceeats.com/thmb/btkemOkvdGKQLPy2YAvRbDfH4HQ=/3000x2000/filters:fill(auto,1)/watermelon-juice-recipe-to-burn-fat-2078407-hero-03-5754d230d6304eed951d94968c6173b8.jpg"  width="200" height="100">
+    <b>watermelon juice</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+  <hr>
+
+  
+
+</div>
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Need food and a good place to eat? Welcome to our humble place where you can eat good food peacefully.</p>
+    <p><strong>I think food is, actually, very Flavorful in itself.”</strong> Feel like HOME <img src="https://cdn.lifestyleasia.com/wp-content/uploads/sites/7/2020/10/23162744/1-806x538.jpeg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="https://img.theculturetrip.com/450x/smart/wp-content/uploads/2018/05/mamma-rosy6.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://cdn.pixabay.com/photo/2016/12/15/12/24/contact-us-1908762__340.png" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at same address at same place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event. We understand  your needs and we will cater the food to satisfy the biggest criteria of them all, Taste, cleanliness, flavor</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <input type="submit" value="Submit">
+      <button type="button" onclick="alert('YOUR MESSAGE SUCCESSFULLY SENT')"><a href="orderpage.html">ONLINE Ordering</a></button>
+
+      
+    </form>
+  </div>
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+
+</script>
+
+</body>
+</html>
